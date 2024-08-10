@@ -1,0 +1,23 @@
+<script src="bg.js"></script>
+<script>
+var js_wrapped_bg = Module.cwrap("main");
+
+
+function changeBG(){
+    js_wrapped_bg();
+}
+// set bg
+function set_background_color(color_idx){
+    var color = "red";
+    if(color_idx == 1)  	color = "blue";
+    else if(color_idx == 2) color = "green";
+    
+    document.body.style.backgroundColor = color; // set the new background color
+}
+
+
+</script>
+
+<button onclick="changeBG()">Change color!</button>
+
+<p>Open the console to see the result!</p>

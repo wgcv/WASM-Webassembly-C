@@ -1,0 +1,30 @@
+// {
+//     "configurations": [
+//         {
+//             "name": "C/C++: gcc build and debug active file",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "${fileDirname}/${fileBasenameNoExtension}",
+//             "args": ["-w"],
+//             "stopAtEntry": false,
+//             "cwd": "${fileDirname}",
+//             "environment": [],
+//             "externalConsole": false,
+//             "MIMode": "lldb",
+//             "preLaunchTask": "C/C++: gcc build active file"
+//         }
+//     ],
+//     "version": "2.0.0"
+// }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch WASM with Emscripten",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/your_wasm_file.wasm"
+        }
+    ]
+}
