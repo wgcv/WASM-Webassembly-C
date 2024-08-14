@@ -1,4 +1,4 @@
-# WASM-Webassembly-C
+# WASM Webassembly with C and C++
 Playing with WASM
 
 
